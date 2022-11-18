@@ -10,7 +10,7 @@
 <details>
   </br>
 
-<h2>You need to install a AUR manager of some sort (yay, paru, etc)</h2>
+### You need to install a AUR manager of some sort (yay, paru, etc)
 # Dependencies
 ```yay -Syu $(cat pkglist)```
 
