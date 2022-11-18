@@ -10,8 +10,9 @@
 <details>
   </br>
 
+<h2>You need to install a AUR manager of some sort (yay, paru, etc)</h2>
 # Dependencies
-```sudo pacman -Syu $(cat pkglist)```
+```yay -Syu $(cat pkglist)```
 
 
 # Install
