@@ -55,4 +55,5 @@ mv Wallpapers/wallpapers/ ~/.config/Aesthetic-Awesome/
 # Credits
 
 <a href="https://github.com/AlphaTechnolog">AlphaTechnolog</a> - I used his helpers.lua and added on to the tags.lua 
+<br>
 <a href="https://github.com/adi1090x">adi1090x</a> - I used his rofi themes
