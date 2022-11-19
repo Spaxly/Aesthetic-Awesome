@@ -40,7 +40,7 @@ Current=multicolor-sddm-theme
 </details>
 
 # **NOTE**
-# Wallpapers Repo needs to be fixed first, I have provided a few in this repo located in the ```config/awesome/wallpapers/``` directory
+### Wallpapers Repo needs to be fixed first<br>I have provided a few in this repo located in the ```config/awesome/wallpapers/``` directory
 ~~### I have moved the wallpapers to another repo due to its large file size (12gb because they have been upscaled to 4K using <a href="https://github.com/upscayl/upscayl">Upscayl</a>). If you want those wallpapers, run the commands below:~~
 ```
 git clone https://github.com/Spaxly/Wallpapers
