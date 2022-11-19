@@ -2,9 +2,11 @@
 
 <h3 align="center">If you decide to use my config, please do give me credit in the README of your fork/repo.</center>
 
-
-<img src="./assets/AwesomeFloatingWindow.png">Floating</img>
-<img src="./assets/Workflow.png">Workflow</img>
+### Rice
+<img src="./assets/AwesomeFloatingWindow.png"></img>
+<br>
+### Workflow
+<img src="./assets/Workflow.png"></img>
 
 # Install
 <details>
