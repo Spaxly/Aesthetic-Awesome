@@ -45,6 +45,11 @@ screen.connect_signal("request::desktop_decoration", function(s)
     end
   }
 
+  systray = wibox.widget({
+    widget = wibox.widget.systray,
+    visible = true,
+  })
+
   clock = wibox.widget({
 		widget = wibox.widget.textclock,
 		format = "%I\n%M %p",
@@ -94,6 +99,7 @@ screen.connect_signal("request::desktop_decoration", function(s)
       {
        layout = wibox.layout.fixed.vertical,
         -- margin(volume_widget, 5, 5, 3, 5),
+        margin(systray, 5, 5, 0, 10),
         margin(s.mylayouts, 5, 0, 0, 10),
         margin(clock, 0, 0, 0, 10),
       },
