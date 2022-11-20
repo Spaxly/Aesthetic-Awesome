@@ -18,7 +18,7 @@
 
 
 # Install
-```cd Aesthetic-Awesome && cp -rf config/ ~/.config/ && mv ~/.config/nvim ~/.config/ && sudo systemctl enable --now sddm```
+```cd Aesthetic-Awesome && cp -rf config/ ~/.config/ && && mv ~/.config/nvim ~/.config/ && cd ~/.config/awesome && git clone https://github.com/vicious-widgets/vicious && git clone https://github.com/BlingCorp/Bling && git clone https://github.com/andOrlando/rubato && sudo systemctl enable --now sddm```
 
 In order to use the SDDM theme, you will have to edit the SDDM config file as shown below.
 ```

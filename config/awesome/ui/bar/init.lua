@@ -8,9 +8,15 @@ local dpi = beautiful.xresources.apply_dpi
 local color = require("gears.color")
 local gfs = require("gears.filesystem")
 local image_path = gfs.get_configuration_dir() .. "assets/"
+local vicious = require("vicious")
 require('../../user_likes')
 
 screen.connect_signal("request::desktop_decoration", function(s)
+
+  awful.tag(
+        {'1', '2', '3', '4', '5'},
+        s, awful.layout.layouts[1]
+    )
 
   local function make_launcher(opts)
     local launcher = wibox.widget {
@@ -38,11 +44,6 @@ screen.connect_signal("request::desktop_decoration", function(s)
       awful.spawn.with_shell('~/.config/awesome/ui/bar/scripts/rofi')
     end
   }
-
-  awful.tag(
-        {'1', '2', '3', '4', '5'},
-        s, awful.layout.layouts[1]
-    )
 
   clock = wibox.widget({
 		widget = wibox.widget.textclock,
@@ -89,10 +90,12 @@ screen.connect_signal("request::desktop_decoration", function(s)
         valign = 'center',
         layout = wibox.container.place,
       },
+
       {
        layout = wibox.layout.fixed.vertical,
         -- margin(volume_widget, 5, 5, 3, 5),
-        margin(clock, 0, 0, 0, 10)
+        margin(s.mylayouts, 5, 0, 0, 10),
+        margin(clock, 0, 0, 0, 10),
       },
     }
   }

@@ -51,3 +51,4 @@ ruled.client.connect_signal("request::rules", function()
     --     properties = { screen = 1, tag = "2" }
     -- }
 end)
+-- }}}
