@@ -10,3 +10,4 @@ function run () {
 run picom --config ~/.config/awesome/apps/picom/picom.conf
 run xsetroot -cursor_name left_ptr
 xinput --set-prop 'Glorious Model O' 'libinput Accel Profile Enabled' 0, 1 &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
