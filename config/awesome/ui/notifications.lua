@@ -34,7 +34,7 @@ naughty.connect_signal('request::display', function (n)
                     {
                         {
                             {
-                                image = n.app_icon,
+                                image = n.icon,
                                 forced_height = 32,
                                 forced_width = 32,
                                 valign = 'center',
