@@ -52,14 +52,14 @@ client.connect_signal('request::titlebars', function (c)
 
     titlebar:setup {
         {
-            paddined_button(awful.titlebar.widget.closebutton(c), {
-                top = 13,
-                bottom = 13,
-                right = 4,
-                left = 14
-            }),
-            paddined_button(awful.titlebar.widget.maximizedbutton(c)),
-            paddined_button(awful.titlebar.widget.minimizebutton(c)),
+            -- paddined_button(awful.titlebar.widget.closebutton(c), {
+                -- top = 13,
+                -- bottom = 13,
+                -- right = 4,
+                -- left = 14
+            -- }),
+            -- paddined_button(awful.titlebar.widget.maximizedbutton(c)),
+            -- paddined_button(awful.titlebar.widget.minimizebutton(c)),
           
             layout = wibox.layout.fixed.horizontal,
         },

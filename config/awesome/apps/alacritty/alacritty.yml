@@ -9,7 +9,7 @@ font:
     # family: JetBrainsMono Nerd Font
     # family: Victor Mono Nerd Font
     style: Medium Italic
-  size: 18
+  size: 16
 
 window:
   padding:
