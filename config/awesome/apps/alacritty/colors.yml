@@ -447,4 +447,4 @@ color_schemes:
       end:
         foreground: "#6e6a86"
 
-colors: *rose-pine
+colors: *mocha

@@ -12,5 +12,5 @@ rofi = "rofi -show drun -theme " .. APPS_PATH .. "rofi/themes/style-1.rasi"
 editor = "nvim"
 editor_cmd = terminal .. " -e " .. editor
 theme = THEME_DIR .. "theme.lua"
-wallpaper = "~/.config/awesome/wallpapers/sky.jpg"
+wallpaper = "~/.config/awesome/wallpapers/blue_waves.png"
 github_username = "Spaxly"
