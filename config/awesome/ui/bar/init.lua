@@ -74,9 +74,9 @@ screen.connect_signal("request::desktop_decoration", function(s)
   s.bar = awful.wibar {
     position = "left",
     screen = s, 
-    margins = 5,
+    -- margins = 5,
     width = 45,
-    height = awful.screen.focused().workarea.height - beautiful.useless_gap * 4,
+    -- height = awful.screen.focused().workarea.height - beautiful.useless_gap * 4,
     -- shape = helpers.mkroundedrect(10),
     widget = {
       layout = wibox.layout.align.vertical,

@@ -1,5 +1,5 @@
 import:
-  - ~/.config/awesome/apps/alacritty/colors.yml
+  - ~/.config/awesome/apps/alacritty/colors/mocha.yml
 
 font:
   normal:
