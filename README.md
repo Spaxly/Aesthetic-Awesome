@@ -12,6 +12,13 @@
 <details>
   </br>
 
+### BETA Install Script
+# NOTE: I have not tested this script, but should work. It is still under development but usable
+```
+git clone https://github.com/Spaxly/Aesthetic-Awesome
+sudo bash Aesthetic-Awesome/install.sh
+```
+
 ### You need to install a AUR manager of some sort (yay, paru, etc)
 # Dependencies
 ```yay -Syu $(cat pkglist)```
