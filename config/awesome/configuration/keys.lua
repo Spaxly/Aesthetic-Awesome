@@ -14,21 +14,11 @@ awful.keyboard.append_global_keybindings({
     { description = "reload awesome", group = "awesome" }),
   awful.key({ modkey, "Shift" }, "q", awesome.quit,
     { description = "quit awesome", group = "awesome" }),
-  awful.key({ modkey }, "x",
-    function()
-      awful.prompt.run {
-        prompt       = "Run Lua code: ",
-        textbox      = awful.screen.focused().mypromptbox.widget,
-        exe_callback = awful.util.eval,
-        history_path = awful.util.get_cache_dir() .. "/history_eval"
-      }
-    end,
-    { description = "lua execute prompt", group = "awesome" }),
 
   awful.key({ modkey, "Shift" }, "Return",
     function() awful.spawn.with_shell(terminal) end,
     { description = "open a terminal", group = "launcher" }),
-
+  
   awful.key({ modkey }, "d",
     function() awful.spawn.with_shell(rofi) end,
     { description = "run prompt", group = "launcher" }),
@@ -48,7 +38,10 @@ awful.keyboard.append_global_keybindings({
   awful.key({ modkey, "Shift" }, "p",
     function() awful.spawn.with_shell(powermenu) end,
     { description = "open powermneu", group = "awesome" }),
-
+  
+  awful.key({ modkey }, "r",
+    function() awful.spawn.with_shell(theme_changer) end,
+    { description = "open theme changer", group = "awesome" }),
 })
 
 -- Tags related keybindings
