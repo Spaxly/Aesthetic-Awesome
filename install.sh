@@ -28,6 +28,7 @@ copy_files () {
   echo "Copying files"
   cp -r config/* ~/.config/
   cp -r icons/ ~/.icons/
+  tar xf ~/.icons/oomox-aesthetic-light.tar.xz
   sleep 1; clear
 }
 
