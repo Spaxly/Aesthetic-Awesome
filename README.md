@@ -13,13 +13,15 @@
   </br>
 
 ### BETA Install Script
-# NOTE: I have not tested this script, but should work. It is still under development but usable
+# NOTE: I have not tested this script, but should work. It is still under development but is usable.
+Prerequisites: ```git```
 ```
 git clone https://github.com/Spaxly/Aesthetic-Awesome
 sudo bash Aesthetic-Awesome/install.sh
 ```
 
 ### You need to install a AUR manager of some sort (yay, paru, etc)
+### Manual Installation
 # Dependencies
 ```yay -Syu $(cat pkglist)```
 
@@ -44,6 +46,7 @@ to
 [THEME]
 Current=multicolor-sddm-theme
 ```
+**It is recommended to reboot after executing the commands above.**
 </details>
 
 # **NOTE**
@@ -54,12 +57,11 @@ git clone https://github.com/Spaxly/Wallpapers
 mv Wallpapers/wallpapers/ ~/.config/Aesthetic-Awesome/
 ```
 
-**It is recommended to reboot after executing the commands above.**
-
 # Features
 - Workspace icons animated using Rubato
 - Various Layouts
 - Minimal Vertical Bar
+- Hyprland-like Animations using picom
 
 # Credits
 
