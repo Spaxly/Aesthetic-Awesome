@@ -9,10 +9,10 @@ colors:
     # Cursor colors
     cursor:
         text: "#1E1E2E" # base
-        cursor: "#F5E0DC" # rosewater
+        cursor: "#89DCEB" # rosewater
     vi_mode_cursor:
         text: "#1E1E2E" # base
-        cursor: "#B4BEFE" # lavender
+        cursor: "#89DCEB" # lavender
 
     # Search colors
     search:

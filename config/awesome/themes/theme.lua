@@ -12,7 +12,7 @@ local gears = require('gears')
 local gfs = require("gears.filesystem")
 local themes_path = gfs.get_themes_dir()
 local image_path = gfs.get_configuration_dir() .. "assets/"
-local theme = require('themes.catppuccin-light')
+local theme = require('themes.catppuccin')
 
 theme.font          = "VictorMono Nerd Font Italic 10"
 
