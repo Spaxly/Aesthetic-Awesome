@@ -3,9 +3,6 @@
 <h3 align="center">If you decide to use my config, please do give me credit in the README of your fork/repo.</center>
 
 ### Showcase
-<img src="./assets/ThemeChangerVideo.mp4"></img>
-
-### Pictures
 <details>
 </br>
   <h3>Latte</h3>
