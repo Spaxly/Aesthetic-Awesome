@@ -3,16 +3,16 @@
 <h3 align="center">If you decide to use my config, please do give me credit in the README of your fork/repo.</center>
 
 ### Showcase
-<img src="./assets/ThemeChangerVideo.mov"></img>
+<img src="./assets/ThemeChangerVideo.mp4"></img>
 
 ### Pictures
 <details>
 </br>
-  ### Latte
+  <h3>Latte</h3>
   <img src="./assets/LightMode.png"></img>
-  ### Mocha
+  <h3>Mocha</h3>
   <img src="./assets/MochaMode.png"></img>
-  ### RosePine
+  <h3>RosePine</h3>
   <img src="./assets/RosePineMode.png"></img>
   
   More to come soon!
