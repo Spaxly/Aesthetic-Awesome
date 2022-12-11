@@ -2,11 +2,21 @@
 
 <h3 align="center">If you decide to use my config, please do give me credit in the README of your fork/repo.</center>
 
-### Rice
-<img src="./assets/AwesomeFloatingWindow.png"></img>
-<br>
-### Workflow
-<img src="./assets/Workflow.png"></img>
+### Showcase
+<img src="./assets/ThemeChangerVideo.mov"></img>
+
+### Pictures
+<details>
+</br>
+  ### Latte
+  <img src="./assets/LightMode.png"></img>
+  ### Mocha
+  <img src="./assets/MochaMode.png"></img>
+  ### RosePine
+  <img src="./assets/RosePineMode.png"></img>
+  
+  More to come soon!
+</details>
 
 # Install
 <details>
