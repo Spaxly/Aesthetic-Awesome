@@ -1,5 +1,5 @@
 import:
-  - ~/.config/awesome/apps/alacritty/colors/mocha.yml
+  - ~/.config/awesome/apps/alacritty/colors/rose-pine.yml
 
 font:
   normal:

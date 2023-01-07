@@ -24,14 +24,14 @@
 Prerequisites: ```git```
 ```
 git clone https://github.com/Spaxly/Aesthetic-Awesome
-sudo bash Aesthetic-Awesome/install.sh
+cd Aesthetic-Awesome/
+./install.sh
 ```
 
 ### You need to install a AUR manager of some sort (yay, paru, etc)
 ### Manual Installation
 # Dependencies
 ```yay -Syu $(cat pkglist)```
-
 
 # Install
 ```cd Aesthetic-Awesome && cp -rf config/ ~/.config/ && && mv ~/.config/nvim ~/.config/ && cd ~/.config/awesome && git clone https://github.com/vicious-widgets/vicious && git clone https://github.com/BlingCorp/Bling && git clone https://github.com/andOrlando/rubato && sudo systemctl enable --now sddm```

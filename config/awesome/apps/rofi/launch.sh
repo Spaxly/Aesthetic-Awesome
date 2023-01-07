@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rofi -show drun -theme ~/.config/bspwm/rofi_alternate/themes/saga.rasi 
+rofi -show drun -theme ~/.config/awesome/apps/rofi/themes/style-1.rasi

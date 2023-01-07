@@ -1,4 +1,4 @@
 require('ui.menu')
-require('ui.titlebar')
+require('ui.titlebars.horizontal')
 require('ui.notifications')
-require('ui.bar')
+require('ui.bar.horizontal_bar')

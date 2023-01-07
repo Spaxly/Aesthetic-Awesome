@@ -9,6 +9,7 @@ declare -a options=(
 
 choice=$(printf '%s\n' "${options[@]}" | rofi -dmenu -i -l 16 -p 'Change Global Theme:' -theme ~/.config/awesome/apps/rofi/themes/style-1.rasi)
 alacritty=~/.config/awesome/apps/alacritty/alacritty.yml
+term=~/.config/awesome/apps/kitty/kitty.conf
 neovim=~/.config/nvim/lua/user/colorscheme.lua
 theme=~/.config/awesome/themes/theme.lua
 user_likes=~/.config/awesome/user_likes.lua
@@ -19,7 +20,7 @@ case $choice in
     sed -i '/wallpaper = /c\wallpaper = "~\/.config\/awesome\/wallpapers\/bluecircuit.png"' $user_likes
     # ------------------
     # TERMINAL  --------
-    sed -i '/  - ~\/.config\/awesome\/apps\/alacritty\/colors/c\  - ~\/.config\/awesome\/apps\/alacritty\/colors\/rose-pine.yml' $alacritty
+    sed -i '/include/c\include ~\/.config\/awesome\/apps\/kitty\/colors\/rose-pine.conf' $term
     # ------------------
     # AWESOMEWM THEME -- 
     sed -i "/local theme = require/c\local theme = require('themes.rose-pine')" $theme
@@ -36,8 +37,7 @@ case $choice in
     sed -i '/wallpaper = /c\wallpaper = "~\/.config\/awesome\/wallpapers\/blue_waves.png"' $user_likes
     # ------------------
     # TERMINAL  --------
-    # sed -i '/colors: */c\colors: *mocha' $alacritty
-    sed -i '/~\/.config\/awesome\/apps\/alacritty\/colors/c\  - ~\/.config\/awesome\/apps\/alacritty\/colors\/mocha.yml' $alacritty
+    sed -i '/include/c\include ~\/.config\/awesome\/apps\/kitty\/colors\/mocha.conf' $term
     # ------------------
     # AWESOMEWM THEME -- 
     sed -i "/local theme = require/c\local theme = require('themes.catppuccin')" $theme
@@ -55,7 +55,7 @@ case $choice in
     sed -i '/wallpaper = /c\wallpaper = "~\/.config\/awesome\/wallpapers\/clouds.png"' $user_likes
     # ------------------
     # TERMINAL  --------
-    sed -i '/~\/.config\/awesome\/apps\/alacritty\/colors/c\  - ~\/.config\/awesome\/apps\/alacritty\/colors\/latte.yml' $alacritty
+    sed -i '/include/c\include ~\/.config\/awesome\/apps\/kitty\/colors\/latte.conf' $term
     # ------------------
     # AWESOMEWM THEME -- 
     sed -i "/local theme = require/c\local theme = require('themes.catppuccin-light')" $theme

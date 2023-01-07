@@ -6,9 +6,6 @@ local awful = require 'awful'
 local beautiful = require 'beautiful'
 local dpi = beautiful.xresources.apply_dpi
 
-local color = require 'color'
-local rubato = require 'rubato'
-
 local helpers = {}
 
 -- colorize a text using pango markup
@@ -19,53 +16,19 @@ function helpers.get_colorized_markup(content, fg)
     return '<span foreground="' .. fg .. '">' .. content .. '</span>'
 end
 
-function helpers.apply_transition(opts)
-    opts = opts or {}
-
-    local bg = opts.bg or beautiful.bg_lighter
-    local hbg = opts.hbg or beautiful.black
-
-    local element, prop = opts.element, opts.prop
-
-    local background = color.color { hex = bg }
-    local hover_background = color.color { hex = hbg }
-
-    local transition = color.transition(background, hover_background)
-
-    local fading = rubato.timed { duration = 0.30 }
-
-    fading:subscribe(function (pos)
-        element[prop] = transition(pos / 100).hex
-    end)
-
-    return {
-        on = function ()
-            fading.target = 100
-        end,
-        off = function ()
-            fading.target = 0
-        end
-    }
-end
-
 -- add hover support to wibox.container.background-based elements
 function helpers.add_hover(element, bg, hbg)
-    local transition = helpers.apply_transition {
-        element = element,
-        prop = 'bg',
-        bg = bg,
-        hbg = hbg,
-    }
-
-    element:connect_signal('mouse::enter', transition.on)
-    element:connect_signal('mouse::leave', transition.off)
-
-	return transition
+    element:connect_signal('mouse::enter', function (self)
+        self.bg = hbg
+    end)
+    element:connect_signal('mouse::leave', function (self)
+        self.bg = bg
+    end)
 end
 
 -- create a rounded rect using a custom radius
 function helpers.mkroundedrect(radius)
-    radius = radius or dpi(20)
+    radius = radius or dpi(7)
     return function (cr, w, h)
         return gears.shape.rounded_rect(cr, w, h, radius)
     end

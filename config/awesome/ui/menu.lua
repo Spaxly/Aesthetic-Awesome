@@ -16,7 +16,7 @@ myawesomemenu = {
 
 mymainmenu = awful.menu {
   items = {
-  { "Terminal", terminal },
+  { "Terminal", function () awful.spawn.with_shell(terminal) end, },
   { "File Manager", file_manager },
   { "Browser", browser },
   { "Editor", editor },

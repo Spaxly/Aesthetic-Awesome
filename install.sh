@@ -28,12 +28,14 @@ copy_files () {
   echo "Copying files"
   cp -r config/* ~/.config/
   cp -r icons/ ~/.icons/
-  tar xf ~/.icons/oomox-aesthetic-light.tar.xz
+  tar xf ~/.icons/oomox-aesthetic-light.tar.xz --directory ~/.icons
   sleep 1; clear
 }
 
-done () {
-  echo "Done! It's recommend to reboot your device."
+submodules () {
+  git clone https://github.com/andOrlando/rubato ~/.config/awesome/
+  git clone https://github.com/andOrlando/color ~/.config/awesome/
+  git clone https://github.com/BlingCorp/bling ~/.config/awesome/
 }
 
 clear
@@ -51,7 +53,8 @@ if [[ $proceed == "1" ]]; then
   install_aur_helper
   install_deps
   copy_files
-  done
+  submodules
+  echo "Done. A reboot is recommended. Also for neovim, don't forget to run PackerSync"
 else
   exit
 fi
